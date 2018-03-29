@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication1;
+package java.app.first.n.primes;
 import java.util.*;
 
 public class Exercise1{
@@ -21,7 +21,8 @@ public class Exercise1{
                 n = Integer.parseInt(inp.nextLine());
                 if (n > 0) {
                     while (dem < n) {
-                        if (primesNumber(i)) {
+                        //use funtion to check.
+                        if (isPrimesNumber(i)) {
                             System.out.print(i + " ");
                             dem++;
                         }
@@ -38,7 +39,8 @@ public class Exercise1{
             }
         }
     }
-    public static boolean primesNumber(int n) {
+    //fucntion to check prime number:
+    public static boolean isPrimesNumber(int n) {
         int dem = 0;
         for (int i = 1; i <= n; i++) {
             if (n % i == 0) {
